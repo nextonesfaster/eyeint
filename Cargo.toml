@@ -1,0 +1,22 @@
+[package]
+name = "eyeint"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sujal Bolia <sujalbolia@gmail.com>"]
+license = "MIT"
+description = "eyeint (ii) inspects arbitrary length integers with various settings."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+path = "src/main.rs"
+name = "ii"
+
+[dependencies]
+bitvec = "1.0.0"
+colored = "2.0.0"
+num-traits = "0.2.15"
+
+[dependencies.clap]
+version = "3.2.6"
+features = ["derive", "cargo", "wrap_help"]
